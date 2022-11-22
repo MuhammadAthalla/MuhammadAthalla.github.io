@@ -27,7 +27,8 @@ nav{
     top: 0;
     left: 0;
     z-index: 99;
-
+   
+    
 
 }
 nav a{
@@ -46,6 +47,16 @@ nav a:hover{
     color: var(--color1);
     transform: scale(1.05);
 
+}
+@media screen and (max-width:480px) {
+    nav{
+        opacity: 0; 
+    }
+
+    #copyright{
+        width: 100%;
+    }
+    
 }
 .judul h3 #ini {
     color: black;
@@ -288,7 +299,7 @@ transition: transform 0.25s;
 }
 .sertifikat-right{
     margin-top: 10rem;
-    padding:rem;
+    
     gap: 5px;
 }
 
@@ -305,6 +316,7 @@ transition: transform 0.25s;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        width: 80%;
     }
 }
 @media screen and (max-width:768px){
@@ -324,7 +336,7 @@ transition: transform 0.25s;
 @media screen and (max-width:480px){
     .sertifikat{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,fr);
     }
     .sertifikat-left{
         text-align: center;
@@ -333,6 +345,21 @@ transition: transform 0.25s;
     .sertifikat-right{
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        padding-right: 28px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and(max-width:479) {
+
+    
+    .sertifikat-right{
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+        width:20%;
         margin: 0 auto;
     }
 }
@@ -355,7 +382,7 @@ transition: transform 0.25s;
     font-weight: bold;
 }
 .card:hover{
-    width:600px ;
+    width: 350px;
     transition-delay: 0.5s;
 }
 
@@ -510,6 +537,8 @@ transition: 0.5s;
     padding: 15px;
     margin-top: 3rem;
     font-weight: bold;
+    width: 97.6%;
+
 }
 
 .dark-light{
@@ -517,6 +546,11 @@ transition: 0.5s;
     margin: 0 auto;
 }
 
-
+@media screen and(max-width:47px){
+    #copyright{
+        width: 91.3%;
+    }
+    
+}
 
 

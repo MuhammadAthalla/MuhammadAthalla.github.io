@@ -14,26 +14,27 @@
 
 :root{
     --transition: all 400ms ease;
-    --color1:rgb(81, 255, 255);
+    --color1:#f9bc61;
 }
 
 nav{
    position: fixed;
     /* position: relative; */
+    /* display: flex; */
    width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
-    padding: 10px;
+    padding: 20px 0 20px 0;
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(20px);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     justify-content: center;
     text-align: center;
 
 }
-nav a{
+.nav-list{
     
     margin: 0 50px;
     border: 2px solid transparent;
@@ -45,15 +46,44 @@ nav a{
     
 }
 
-nav a:hover{
+.nav-list:hover{
     color: var(--color1);
     transform: scale(1.05);
 
 }
+
+.logo{
+    /* display: flex; */
+    color: red;
+    justify-content:flex-start ;
+    display: none;
+    /* overflow: hidden;
+    opacity: 0; */
+    
+}
+
+
+
 @media screen and (max-width:480px) {
-    nav{
-        opacity: 0; 
+    .nav-list{
+        display: none;
     }
+
+    .navbar-list h1 a {
+        color: #f9bc61;
+    }
+     .logo{
+        justify-content: center;
+        display: block;
+        justify-content: center ;
+        visibility: visible;
+        overflow: visible;
+        opacity: 1;
+        
+        
+     }
+
+    
 
     #copyright{
         width: 100%;
@@ -67,7 +97,7 @@ nav a:hover{
 .text-judul{
     display: grid;
     margin-top: 10rem;
-    margin-left: 20px;
+    margin-left: 20px; 
     margin-bottom: 15rem;
     font-style: normal;
     grid-template-columns: repeat(2, 1fr);
@@ -122,6 +152,7 @@ nav a:hover{
     }
     .text-judul{
 grid-template-columns: repeat(1,1fr);
+margin-left: 0;
     }
 }
 @media screen and (max-width:768px){
@@ -134,6 +165,7 @@ grid-template-columns: repeat(1,1fr);
     }
     .text-judul{
 grid-template-columns: repeat(1,1fr);
+margin-left: 0;
     }
 }
 @media screen and (max-width:480px){
@@ -146,6 +178,7 @@ grid-template-columns: repeat(1,1fr);
     }
     .text-judul{
 grid-template-columns: repeat(1,1fr);
+margin-left: 0;
     }
 }
 hr{

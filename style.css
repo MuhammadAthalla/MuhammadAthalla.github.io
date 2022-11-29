@@ -20,15 +20,17 @@
 nav{
    position: fixed;
     /* position: relative; */
-    width: 95%;
-    text-align: center;
-    padding: 20px 30px;
-    color: white;
+   width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
-   
-    
+    padding: 10px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(20px);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
 
 }
 nav a{
@@ -73,9 +75,7 @@ nav a:hover{
     
 
 }
-.sertifikat-left #ini{
-    color:white;
-}
+
 .text-judul{
     color: white;
 }
@@ -152,7 +152,7 @@ hr{
     border-bottom: 3px solid black;
 }
 
-.header-container{
+.project-mcr{
     display: grid;
    grid-template-columns: repeat(4,2fr);
     gap: 5px; 
@@ -240,7 +240,7 @@ transition: transform 0.25s;
 }
  
 @media screen and (max-width:912px){
-    .header-container{
+    .project-mcr{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         
@@ -256,7 +256,7 @@ transition: transform 0.25s;
 }
 
 @media screen and (max-width:768px){
-    .header-container{
+    .project-mcr{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         
@@ -270,7 +270,7 @@ transition: transform 0.25s;
     }
 }
 @media screen and (max-width:480px){
-    .header-container{
+    .project-mcr{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         
@@ -284,97 +284,114 @@ transition: transform 0.25s;
     }
 }
 .sertifikat{
-    display: grid;
+        display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 3rem;
+    
 }
 
 .sertifikat-left{
-    padding: 50px;
-    
+   color: white;
+   padding: 50px;
+   
+
 }
 .sertifikat-left h1{
     color: var(--color1);
 }
 .sertifikat-right{
-    margin-top: 10rem;
+    /* padding: 0 5rem; */
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:912px) {
+   .sertifikat{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     
-    gap: 5px;
-}
+   } 
 
-@media screen and (max-width:912px){
-    .sertifikat{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .sertifikat-left{
-        text-align: center;
-        justify-content: center;
-    }
-    .sertifikat-right{
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 80%;
-    }
-}
-@media screen and (max-width:768px){
-    .sertifikat{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .sertifikat-left{
-        text-align: center;
-        justify-content: center;
-    }
-    .sertifikat-right{
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width:480px){
-    .sertifikat{
-        display: grid;
-        grid-template-columns: repeat(1,fr);
-    }
-    .sertifikat-left{
-        text-align: center;
-        justify-content: center;
-    }
-    .sertifikat-right{
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 80%;
-        padding-right: 28px;
-        padding-left: 30px;
-    }
-}
-
-@media screen and(max-width:479) {
-
+   .sertifikat-left{
+    text-align: center;
+    padding: 0;
+   }
     
-    .sertifikat-right{
-        justify-content: center;
-        align-items: center;
-        /* margin: 0 auto; */
-        width:20%;
-        margin: 0 auto;
-    }
+   
+    
 }
+@media screen and (max-width:768px) {
+   .sertifikat{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+   } 
+    .sertifikat-left{
+    text-align: center;
+    padding: 0;
+   }
+    
+   .sertifikat-right{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 50px;
+   }
+}
+@media screen and (max-width:480px) {
+   .sertifikat{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+   } 
+    .sertifikat-left{
+    text-align: center;
+    padding: 0;
+   }
+
+   .sertifikat-right{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 50px;
+   }
+    
+}
+@media screen and (max-width:414px) {
+   .sertifikat{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+   } 
+    .sertifikat-left{
+    text-align: center;
+    padding: 0;
+   }
+
+   .sertifikat-right{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 50px;
+   }
+    
+}
+
+
+
 
 .card
 {
     position:  relative;
-    padding: 20px;
-    width: 40px;
-    height: 350px;
+    /* padding: 20px; */
+    /* width: 40px; */
+    /* height: px; */
     margin: 0 auto ;
     /* margin-bottom: 5rem  ; */
     
     border-radius: 20px;
-    transition: 0.5s;
+    transition: 0.2s;
     transition-delay: 0.5s;
     display: flex;
     justify-content: center;
@@ -382,8 +399,9 @@ transition: transform 0.25s;
     font-weight: bold;
 }
 .card:hover{
-    width: 350px;
-    transition-delay: 0.5s;
+    /* width: 0px; */
+    height: 400px;
+    /* transition-delay: 0.2s; */
 }
 
 .card .circle{
@@ -398,7 +416,7 @@ transition: transform 0.25s;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -421,8 +439,8 @@ transition: transform 0.25s;
 .card .circle .nama{
     position: relative;
     width: 20px;
-    transition: 0.5s;
-    transition-delay: 0.2s;
+    transition: 0.3s;
+    /* transition-delay: 0.1s; */
     /* justify-content: center; */
     
 
@@ -433,12 +451,12 @@ transform: scale(0);
 
 .content{
     position: relative;
-    width: 30%;
-    left: 20%;
-    padding: 40px 40px 40px 60px;
+    /* width: 30%;
+    left: 20%; */
+    /* padding: ; */
     opacity: 0;
-    transition: 0.2s;
-    visibility: hidden;
+    transition: 0.1s;
+    visibility:visible;
     
 }
 
@@ -446,12 +464,15 @@ transform: scale(0);
 left: 0;
 opacity: 1;
 visibility: visible;
+transition:0.1s;
 }
 
 .content p{
     color: rgb(0, 0, 0) uppercase;
 
 }
+
+
 
 
 
@@ -531,14 +552,13 @@ transition: 0.5s;
     
 }
 
-#copyright{
-    color: rgb(255, 104, 104);
-    background-color: white;
-    padding: 15px;
-    margin-top: 3rem;
+footer{
+    background-color: var(--color1);
+    padding: 30px;
+    text-align: center;
     font-weight: bold;
-    width: 97.6%;
-
+    color: black;
+    margin-top: 50px;
 }
 
 .dark-light{

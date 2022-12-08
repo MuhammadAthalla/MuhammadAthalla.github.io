@@ -49,6 +49,7 @@ body{
 }
 .card:hover{
     width:350px ;
+    
     transition-delay: 0.5s;
 }
 .darkmode .img-overlay{
@@ -146,7 +147,7 @@ transform: scale(0);
     position: relative;
     /* width: 50%; */
     left: 20%;
-    padding: 20px 20px 20px 40px;
+    padding: 40px 20px;
     opacity: 0;
     transition: 0.2s;
     visibility: hidden;

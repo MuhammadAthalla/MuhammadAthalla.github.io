@@ -433,7 +433,8 @@ transition: transform 0.25s;
 }
 .card:hover{
     /* width: 0px; */
-    height: 400px;
+    height: 250px;
+    /* width: 200px; */
     /* transition-delay: 0.2s; */
 }
 

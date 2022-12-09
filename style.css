@@ -484,7 +484,7 @@ aside{
 .aboutus-card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #4fb6c7;
+    background-color: var(--color1);
     padding: 2rem;
     gap: 2rem;
     border-radius: 20px;
@@ -493,11 +493,18 @@ aside{
 
 .aboutus-img{
     border: 10px;
+    width: 60%;
 }
 
 .aboutus-right h3{
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aboutus-right p{
+    margin-bottom: 10px;
+    font-size: 15gitpx;
     font-weight: bold;
 }
 

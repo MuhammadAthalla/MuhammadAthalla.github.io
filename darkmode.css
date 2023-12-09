@@ -14,6 +14,13 @@
     --color2:#4fb6c7;
 }
 
+.darkmode .nav-item{
+    color: black;
+}
+.darkmode .nav-item:hover{
+    color: red;
+}
+
 body{
     background: #f0e7e2;
 }
